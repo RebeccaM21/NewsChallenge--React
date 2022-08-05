@@ -2,8 +2,8 @@ const HeadlineDescription = ({headline}) => {
 
     return (
         <>  
-            <img src={headline.thumbnail} alt="" />
-            <h1>{headline.title}</h1>
+            <img src={headline.fields.thumbnail} alt="" />
+            <h1>{headline.fields.headline}</h1>
         </>
     )
 }

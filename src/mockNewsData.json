@@ -1,4 +1,13 @@
 {
+    "response": {
+        "status": "ok",
+        "userTier": "developer",
+        "total": 2360754,
+        "startIndex": 1,
+        "pageSize": 10,
+        "currentPage": 1,
+        "pages": 236076,
+        "orderBy": "newest",
         "results": [
             {
                 "id": "australia-news/2022/jul/20/daniel-andrews-apologises-for-disgraceful-behaviour-of-labor-mps-after-scathing-ibac-findings",
@@ -192,3 +201,4 @@
             }
         ]
     }
+}
