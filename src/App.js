@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import mockNewsData from './mockNewsData.json'; 
 import HeadlineMain from './Components/HeadlineMain';
 import SummaryMain from './Components/SummaryMain';
 
@@ -21,10 +21,12 @@ function App() {
 
 
   return (
-    <div className="App">
-      <HeadlineMain headlines={headlineData} />
-      < SummaryMain headlines={headlineData} />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HeadlineMain headlines={headlineData} />} />
+        <Route path="/summary" element={<SummaryMain headlines={headlineData} />} />
+      </Routes>
+  </Router> 
   );
 }
 
