@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HeadlineMain from './Components/HeadlineMain';
 import SummaryMain from './Components/SummaryMain';
+import NavBar from './Components/NavBar';
 
 function App() {
 
@@ -22,10 +23,13 @@ function App() {
 
   return (
     <Router>
+      <>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HeadlineMain headlines={headlineData} />} />
-        <Route path="/summary" element={<SummaryMain headlines={headlineData} />} />
+        <Route path="/summary/" element={<SummaryMain headlines={headlineData} />} />
       </Routes>
+        </>
   </Router> 
   );
 }

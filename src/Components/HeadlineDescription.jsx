@@ -1,11 +1,20 @@
-const HeadlineDescription = ({headline}) => {
+const HeadlineDescription = ({ headline }) => {
 
     return (
-        <>  
-            <img src={headline.fields.thumbnail} alt="" />
-            <h1>{headline.fields.headline}</h1>
-        </>
+        <div className="card" style={{width: "80%" , margin: "auto"}}>
+            <img className="card-img-top" src={headline.fields.thumbnail} alt="Headline"></img>
+    <div className="card text-center">
+  <div className="card-header">
+  </div>
+  <div className="card-body">
+    <h5 className="card-title">{headline.fields.headline}</h5>
+    <a href="/summary/:id" className="btn btn-primary">Read More...</a>
+  </div>
+  <div className="card-footer text-muted">
+  </div>
+</div>
+</div>
     )
-}
+} 
 
 export default HeadlineDescription; 
