@@ -8,7 +8,7 @@ const HeadlineDescription = ({ headline }) => {
   </div>
   <div className="card-body">
     <h5 className="card-title">{headline.fields.headline}</h5>
-    <a href="/summary/:id" className="btn btn-primary">Read More...</a>
+    <a href="/summary" className="btn btn-primary">Read More...</a>
   </div>
   <div className="card-footer text-muted">
   </div>
